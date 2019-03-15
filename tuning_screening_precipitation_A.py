@@ -57,7 +57,7 @@ class TuningScreeningPrecipitation:
         np.random.seed(seed)
 
         # Load dataset:
-        path = '/media/DATA/tmp/datasets/regionais/meteo_regions/csv_regions/TAG/yearly/'
+        path = '/home/david/DATA/'
         file = 'yearly_clip_R1_OK_TAG.csv'
         df = pd.read_csv(os.path.join(path, file), sep=',', decimal='.')
         x, y= df.loc[:,['36V', '89V', '166V', '190V']], df.loc[:,['TagRain']]
