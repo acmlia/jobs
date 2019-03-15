@@ -1,0 +1,338 @@
+Running on host node005
+Time is Dom Mar 10 18:53:28 -03 2019
+Directory is /home/david/git-repos/jobs
+Slurm job ID is 4976
+This job runs on the following machines:
+node005
+Running /home/david/vp368cpu/bin/python /home/david/git-repos/jobs/tuning_dropout_regularization_A.py
+Using TensorFlow backend.
+/home/david/vp368cpu/lib/python3.6/site-packages/sklearn/model_selection/_split.py:2053: FutureWarning: You should specify a value for 'cv' instead of relying on the default value. The default value will change from 3 to 5 in version 0.22.
+  warnings.warn(CV_WARNING, FutureWarning)
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-03-10 18:53:39.701204: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-10 18:53:39.701765: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3cb7200 executing computations on platform Host. Devices:
+2019-03-10 18:53:39.701786: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-10 18:53:39.712671: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-10 18:53:39.713404: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3cb68e0 executing computations on platform Host. Devices:
+2019-03-10 18:53:39.713430: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-10 18:53:39.729560: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-10 18:53:39.730280: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3cb6e00 executing computations on platform Host. Devices:
+2019-03-10 18:53:39.730318: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-10 18:53:39.731713: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-10 18:53:39.731826: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-10 18:53:39.732457: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3cb71d0 executing computations on platform Host. Devices:
+2019-03-10 18:53:39.732478: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-10 18:53:39.732747: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3cb6f70 executing computations on platform Host. Devices:
+2019-03-10 18:53:39.732771: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-10 18:53:39.755130: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-10 18:53:39.755854: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3cb69e0 executing computations on platform Host. Devices:
+2019-03-10 18:53:39.755900: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-10 18:53:39.761726: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-10 18:53:39.762598: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3cb68f0 executing computations on platform Host. Devices:
+2019-03-10 18:53:39.762622: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-10 18:53:39.783004: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-10 18:53:39.783151: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-10 18:53:39.783304: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-10 18:53:39.784094: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3cb7170 executing computations on platform Host. Devices:
+2019-03-10 18:53:39.784145: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-10 18:53:39.784177: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3cb7700 executing computations on platform Host. Devices:
+2019-03-10 18:53:39.784225: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-10 18:53:39.784265: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3cb6cb0 executing computations on platform Host. Devices:
+2019-03-10 18:53:39.784295: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-10 18:53:39.798665: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-10 18:53:39.798802: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-10 18:53:39.799766: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3cb6db0 executing computations on platform Host. Devices:
+2019-03-10 18:53:39.799791: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-10 18:53:39.799977: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3cb7280 executing computations on platform Host. Devices:
+2019-03-10 18:53:39.800001: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-10 18:53:39.816672: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-10 18:53:39.817492: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3cb7340 executing computations on platform Host. Devices:
+2019-03-10 18:53:39.817521: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-10 18:53:39.839724: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-10 18:53:39.840565: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3cb6540 executing computations on platform Host. Devices:
+2019-03-10 18:53:39.840589: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-10 18:53:39.851700: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-10 18:53:39.852609: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3cb7990 executing computations on platform Host. Devices:
+2019-03-10 18:53:39.852656: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-10 18:53:39.866217: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-10 18:53:39.866992: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3cf69b0 executing computations on platform Host. Devices:
+2019-03-10 18:53:39.867041: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-10 18:53:39.882676: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-10 18:53:39.883585: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3cf7020 executing computations on platform Host. Devices:
+2019-03-10 18:53:39.883608: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-10 18:53:39.903117: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-10 18:53:39.903673: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3cf67c0 executing computations on platform Host. Devices:
+2019-03-10 18:53:39.903718: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-10 18:53:39.920713: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-10 18:53:39.922337: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3cf7d40 executing computations on platform Host. Devices:
+2019-03-10 18:53:39.922385: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-10 18:53:39.929139: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-10 18:53:39.930057: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3cf7b30 executing computations on platform Host. Devices:
+2019-03-10 18:53:39.930113: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-03-11 03:45:23.299025: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200100000 Hz
+2019-03-11 03:45:23.299974: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x5e0c6e0 executing computations on platform Host. Devices:
+2019-03-11 03:45:23.300018: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+Best: 15.345649 using {'dropout_rate': 0.1, 'weight_constraint': 3}
+15.113279 (0.135182) with: {'dropout_rate': 0.0, 'weight_constraint': 1}
+15.026622 (0.695773) with: {'dropout_rate': 0.0, 'weight_constraint': 2}
+15.327199 (0.244363) with: {'dropout_rate': 0.0, 'weight_constraint': 3}
+15.243622 (0.459176) with: {'dropout_rate': 0.0, 'weight_constraint': 4}
+15.127892 (0.211295) with: {'dropout_rate': 0.0, 'weight_constraint': 5}
+14.991944 (0.027712) with: {'dropout_rate': 0.1, 'weight_constraint': 1}
+15.149852 (0.108752) with: {'dropout_rate': 0.1, 'weight_constraint': 2}
+15.345649 (0.193906) with: {'dropout_rate': 0.1, 'weight_constraint': 3}
+15.335777 (0.180877) with: {'dropout_rate': 0.1, 'weight_constraint': 4}
+15.295612 (0.147524) with: {'dropout_rate': 0.1, 'weight_constraint': 5}
+15.032239 (0.227607) with: {'dropout_rate': 0.2, 'weight_constraint': 1}
+15.081999 (0.070055) with: {'dropout_rate': 0.2, 'weight_constraint': 2}
+15.199255 (0.274385) with: {'dropout_rate': 0.2, 'weight_constraint': 3}
+15.227577 (0.221480) with: {'dropout_rate': 0.2, 'weight_constraint': 4}
+15.278425 (0.172482) with: {'dropout_rate': 0.2, 'weight_constraint': 5}
+15.024318 (0.275000) with: {'dropout_rate': 0.3, 'weight_constraint': 1}
+15.228631 (0.208951) with: {'dropout_rate': 0.3, 'weight_constraint': 2}
+15.235699 (0.137869) with: {'dropout_rate': 0.3, 'weight_constraint': 3}
+15.167083 (0.238436) with: {'dropout_rate': 0.3, 'weight_constraint': 4}
+15.214119 (0.223231) with: {'dropout_rate': 0.3, 'weight_constraint': 5}
+15.070988 (0.193953) with: {'dropout_rate': 0.4, 'weight_constraint': 1}
+15.098674 (0.053168) with: {'dropout_rate': 0.4, 'weight_constraint': 2}
+15.181422 (0.211269) with: {'dropout_rate': 0.4, 'weight_constraint': 3}
+15.171937 (0.114810) with: {'dropout_rate': 0.4, 'weight_constraint': 4}
+15.281199 (0.198354) with: {'dropout_rate': 0.4, 'weight_constraint': 5}
+15.092355 (0.275302) with: {'dropout_rate': 0.5, 'weight_constraint': 1}
+15.207768 (0.204633) with: {'dropout_rate': 0.5, 'weight_constraint': 2}
+15.167036 (0.306501) with: {'dropout_rate': 0.5, 'weight_constraint': 3}
+15.288185 (0.175925) with: {'dropout_rate': 0.5, 'weight_constraint': 4}
+15.291864 (0.166925) with: {'dropout_rate': 0.5, 'weight_constraint': 5}
+15.014419 (0.166418) with: {'dropout_rate': 0.6, 'weight_constraint': 1}
+15.219446 (0.162570) with: {'dropout_rate': 0.6, 'weight_constraint': 2}
+15.288053 (0.189115) with: {'dropout_rate': 0.6, 'weight_constraint': 3}
+15.259374 (0.283813) with: {'dropout_rate': 0.6, 'weight_constraint': 4}
+15.201171 (0.107953) with: {'dropout_rate': 0.6, 'weight_constraint': 5}
+15.051453 (0.168140) with: {'dropout_rate': 0.7, 'weight_constraint': 1}
+15.093834 (0.145591) with: {'dropout_rate': 0.7, 'weight_constraint': 2}
+15.256644 (0.218865) with: {'dropout_rate': 0.7, 'weight_constraint': 3}
+15.237840 (0.243333) with: {'dropout_rate': 0.7, 'weight_constraint': 4}
+15.220298 (0.254521) with: {'dropout_rate': 0.7, 'weight_constraint': 5}
+15.053388 (0.206877) with: {'dropout_rate': 0.8, 'weight_constraint': 1}
+15.206905 (0.230449) with: {'dropout_rate': 0.8, 'weight_constraint': 2}
+15.103606 (0.053213) with: {'dropout_rate': 0.8, 'weight_constraint': 3}
+15.134228 (0.083808) with: {'dropout_rate': 0.8, 'weight_constraint': 4}
+15.094282 (0.087358) with: {'dropout_rate': 0.8, 'weight_constraint': 5}
+14.567265 (0.525602) with: {'dropout_rate': 0.9, 'weight_constraint': 1}
+15.101026 (0.188405) with: {'dropout_rate': 0.9, 'weight_constraint': 2}
+15.089470 (0.159599) with: {'dropout_rate': 0.9, 'weight_constraint': 3}
+15.109745 (0.244093) with: {'dropout_rate': 0.9, 'weight_constraint': 4}
+15.169447 (0.164388) with: {'dropout_rate': 0.9, 'weight_constraint': 5}
+Time passed: 9hour:39min:34sec
+
+real	579m37.999s
+user	8795m9.613s
+sys	1604m17.315s

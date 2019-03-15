@@ -10,7 +10,7 @@
 #module add cuda80/toolkit/8.0.61
 # Work directory
 #workdir="$SLURM_SUBMIT_DIR"
-workdir="/home/david/git-repos/hyperparameters"
+workdir="/home/david/git-repos/jobs"
 
 # Full path to application + application name
 application="$(which python)"
