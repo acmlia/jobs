@@ -97,7 +97,7 @@ class TuningScreeningPrecipitation:
         neurons = [2, 3, 4, 5, 6, 7, 8]
         param_grid = dict(neurons=neurons)
         grid_model = GridSearchCV(estimator=model, param_grid=param_grid,
-                                  cv=10)
+                                  cv=10, n_jobs=-1)
         grid_result = grid_model.fit(x_train, y_train)
         return grid_result
 
