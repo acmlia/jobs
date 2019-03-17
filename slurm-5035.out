@@ -1,0 +1,24 @@
+Running on host node004
+Time is Sex Mar 15 16:25:26 -03 2019
+Directory is /home/david/git-repos/jobs
+Slurm job ID is 5035
+This job runs on the following machines:
+node004
+Running /home/david/vp368cpu/bin/python /home/david/git-repos/jobs/tuning_screening_precipitation_A1.py
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-03-15 16:25:32.962829: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2199915000 Hz
+2019-03-15 16:25:32.964134: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x5b1be80 executing computations on platform Host. Devices:
+2019-03-15 16:25:32.964194: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+Original dataset shape Counter({0: 84407, 1: 7706})
+Resampled dataset shape Counter({1: 81499, 0: 76341})
+Time passed: 29hour:44min:54sec
+
+real	1784m58.586s
+user	3305m18.085s
+sys	520m9.791s
