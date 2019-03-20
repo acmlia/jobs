@@ -10,6 +10,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.externals import joblib
 from keras.models import Sequential
 from keras.layers import Dense
+from keras.optimizers import SGD
 from keras.wrappers.scikit_learn import KerasRegressor
 #from collections import Counter
 #from keras.callbacks import ModelCheckpoint
@@ -33,18 +34,19 @@ def tac():
 class TuningRegressionPrecipitation:
     
 
-    def  create_model(self, neurons=5):
+    def  create_model(self, neurons=1):
         '''
 		 Fucntion to create the instance and configuration of the keras
 		 model(Sequential and Dense).
 		'''
         # Create the Keras model:
         model = Sequential()
-        model.add(Dense(neurons, input_dim=11, kernel_initializer='uniform', activation='relu'))
-        model.add(Dense(neurons, kernel_initializer='uniform', activation='relu'))
-        model.add(Dense(1, kernel_initializer='uniform', activation='sigmoid'))
+        model.add(Dense(neurons, input_dim=4, kernel_initializer='uniform', activation='linear'))
+        model.add(Dense(neurons, kernel_initializer='uniform', activation='sigmoid'))
+        model.add(Dense(1, kernel_initializer='uniform', activation='linear'))
         # Compile model
-        model.compile(loss='binary_crossentropy', optimizer='SGD', metrics=['accuracy'],)
+        optimizer = SGD(lr=0.3, momentum=0.2)
+        model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accuracy'],)
         return model
 
     def run_TuningRegressionPrecipitation(self):
@@ -58,11 +60,10 @@ class TuningRegressionPrecipitation:
         np.random.seed(seed)
 
         # Load dataset:
-        path = 'home/david/DATA/'
+        path = '/home/david/DATA/'
         file = 'yrly_br_under_c1.csv'
         df = pd.read_csv(os.path.join(path, file), sep=',', decimal='.')
-        x, y= df.loc[:,['36V', '89V', '166V', '186V', '190V', '36VH', '89VH',
-                        '166VH', '183VH', 'PCT36', 'PCT89']], df.loc[:,['sfcprcp']]
+        x, y= df.loc[:,['36V', '89V', '166V', '190V']], df.loc[:,['sfcprcp']]
         
         x_arr = np.asanyarray(x)
         y_arr = np.asanyarray(y)
@@ -91,11 +92,11 @@ class TuningRegressionPrecipitation:
 #        callbacks_list = [checkpoint]
 
         # Create the instance for KerasRegressor:
-        model = KerasRegressor(build_fn=self.create_model, batch_size=10,
-                                epochs=100, verbose=0)
+        model = KerasRegressor(build_fn=self.create_model, batch_size=100,
+                                epochs=500, verbose=0)
 
         # Define the grid search parameters:
-        neurons = [6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 25]
+        neurons = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
         param_grid = dict(neurons=neurons)
         grid_model = GridSearchCV(estimator=model, param_grid=param_grid,
                                   cv=10, n_jobs=-1)
@@ -124,7 +125,7 @@ if __name__ == '__main__':
     
     training_model = TuningRegressionPrecipitation()
     grid_result = training_model.run_TuningRegressionPrecipitation()
-    joblib.dump(grid_result, 'model_trained_regression_precipitation_R2.pkl')
+    joblib.dump(grid_result, 'model_trained_regression_precipitation_W1.pkl')
     #    loaded_model = joblib.load('/media/DATA/tmp/git-repositories/models_pkl/model_trained_screening_precipitation_A6.pkl')
     
     
