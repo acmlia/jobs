@@ -58,7 +58,7 @@ class TuningRegressionPrecipitation:
         np.random.seed(seed)
 
         # Load dataset:
-        path = 'home/david/DATA/'
+        path = '/home/david/DATA/'
         file = 'yrly_br_under_c1.csv'
         df = pd.read_csv(os.path.join(path, file), sep=',', decimal='.')
         x, y= df.loc[:,['36V', '89V', '166V', '186V', '190V', '36VH', '89VH',

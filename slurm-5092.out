@@ -1,0 +1,30 @@
+Running on host node001
+Time is Qua Mar 20 03:30:44 -03 2019
+Directory is /home/david/git-repos/jobs
+Slurm job ID is 5092
+This job runs on the following machines:
+node001
+Running /home/david/vp368cpu/bin/python /home/david/git-repos/jobs/tuning_regression_precipitation_R4.py
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "/home/david/git-repos/jobs/tuning_regression_precipitation_R4.py", line 126, in <module>
+    grid_result = training_model.run_TuningRegressionPrecipitation()
+  File "/home/david/git-repos/jobs/tuning_regression_precipitation_R4.py", line 63, in run_TuningRegressionPrecipitation
+    df = pd.read_csv(os.path.join(path, file), sep=',', decimal='.')
+  File "/home/david/vp368cpu/lib/python3.6/site-packages/pandas/io/parsers.py", line 702, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/david/vp368cpu/lib/python3.6/site-packages/pandas/io/parsers.py", line 429, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/david/vp368cpu/lib/python3.6/site-packages/pandas/io/parsers.py", line 895, in __init__
+    self._make_engine(self.engine)
+  File "/home/david/vp368cpu/lib/python3.6/site-packages/pandas/io/parsers.py", line 1122, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/david/vp368cpu/lib/python3.6/site-packages/pandas/io/parsers.py", line 1853, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 387, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 705, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] File b'home/david/DATA/yrly_br_under_c1_over_c3c4.csv' does not exist: b'home/david/DATA/yrly_br_under_c1_over_c3c4.csv'
+
+real	0m3.842s
+user	0m2.884s
+sys	0m2.079s
