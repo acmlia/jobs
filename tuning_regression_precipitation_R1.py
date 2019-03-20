@@ -11,6 +11,7 @@ from sklearn.externals import joblib
 from keras.models import Sequential
 from keras.layers import Dense
 from keras.wrappers.scikit_learn import KerasRegressor
+from meteoro_skills import MeteorologicalDiagnosis
 #from collections import Counter
 #from keras.callbacks import ModelCheckpoint
 #from imblearn.over_sampling import SMOTE # doctest: +NORMALIZE_WHITESPACE
@@ -58,7 +59,8 @@ class TuningRegressionPrecipitation:
         np.random.seed(seed)
 
         # Load dataset:
-        path = '/home/david/DATA/'
+        #path = '/home/david/DATA/'
+        path = '/media/DATA/tmp/datasets/brazil/brazil_qgis/csv/'
         file = 'yrly_br_under_c1.csv'
         df = pd.read_csv(os.path.join(path, file), sep=',', decimal='.')
         x, y= df.loc[:,['36V', '89V', '166V', '190V']], df.loc[:,['sfcprcp']]
@@ -121,10 +123,10 @@ if __name__ == '__main__':
 
     tic()
     
-    training_model = TuningRegressionPrecipitation()
-    grid_result = training_model.run_TuningRegressionPrecipitation()
-    joblib.dump(grid_result, 'model_trained_regression_precipitation_R1.pkl')
-    #    loaded_model = joblib.load('/media/DATA/tmp/git-repositories/models_pkl/model_trained_screening_precipitation_A6.pkl')
+#    training_model = TuningRegressionPrecipitation()
+#    grid_result = training_model.run_TuningRegressionPrecipitation()
+#    joblib.dump(grid_result, 'model_trained_regression_precipitation_R1.pkl')
+    loaded_model = joblib.load('/media/DATA/tmp/git-repositories/jobs/model_trained_regression_precipitation_R1.pkl')
     
     
     
@@ -134,35 +136,34 @@ if __name__ == '__main__':
 # ------------------------------------------------------------------------------
 # Loading the input dataset to be used to make "unseen" predictions:
 # Fix random seed for reproducibility:
-#    seed = 7
-#    np.random.seed(seed)
+    seed = 7
+    np.random.seed(seed)
+
+    path = '/media/DATA/tmp/datasets/brazil/brazil_qgis/csv/'
+    file = 'yrly_br_under_c1.csv'
+    df = pd.read_csv(os.path.join(path, file), sep=',', decimal='.')
+    x, y= df.loc[:,['36V', '89V', '166V', '190V']], df.loc[:,['sfcprcp']]
+      
+    x_arr = np.asanyarray(x)
+    y_arr = np.asanyarray(y)
+    y_arr = np.ravel(y_arr)
+
+    # Scaling the input paramaters:
+    #       scaler_min_max = MinMaxScaler()
+    #       x_scaled = scaler_min_max.fit_transform(x)
+    norm_sc = Normalizer()
+    x_normalized = norm_sc.fit_transform(x_arr)
+
+    # Split the dataset in test and train samples:
+    x_train, x_test, y_train, y_test = train_test_split(x_normalized, y_arr, test_size=0.10, random_state=101)
+
+    # Doing prediction from the test dataset:
+    y_pred = loaded_model.predict(x_test)
+
+    # ------------------------------------------------------------------------------
+    # ------------------------------------------------------------------------------
+    # Appplying meteorological skills to verify the performance of the model, in this case, categorical scores:
 #
-#    # Load dataset:
-#    path = '/media/DATA/tmp/datasets/regionais/meteo_regions/csv_regions/TAG/yearly/'
-#    file = 'yearly_br_TAG_class1_reduced.csv'
-#    df = pd.read_csv(os.path.join(path, file), sep=',', decimal='.')
-#    x, y = df.loc[:, ['36V', '89V', '166V', '190V']], df.loc[:, ['TagRain']]
-#
-#    x_arr = np.asanyarray(x)
-#    y_arr = np.asanyarray(y)
-#    y_arr = np.ravel(y_arr)
-#
-#    # Scaling the input paramaters:
-#    #       scaler_min_max = MinMaxScaler()
-#    #       x_scaled = scaler_min_max.fit_transform(x)
-#    norm_sc = Normalizer()
-#    x_normalized = norm_sc.fit_transform(x_arr)
-#
-#    # Split the dataset in test and train samples:
-#    x_train, x_test, y_train, y_test = train_test_split(x_normalized, y_arr, test_size=0.10, random_state=101)
-#
-#    # Doing prediction from the test dataset:
-#    y_pred = loaded_model.predict(x_test)
-#
-#    # ------------------------------------------------------------------------------
-#    # ------------------------------------------------------------------------------
-#    # Appplying meteorological skills to verify the performance of the model, in this case, categorical scores:
-#
-#    skills = MeteorologicalDiagnosis()
-#    accuracy, bias, pod, pofd, far, csi, ets, hss, hkd = skills.metrics(y_test, y_pred)
+#    skills = MeteorologicalDiagnosis(y_test, y_pred)
+#    accuracy, bias, pod, pofd, far, csi, ets, hss, hkd = skills.metrics()
 
