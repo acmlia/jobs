@@ -215,3 +215,8 @@ Use tf.cast instead.
 2019-03-20 13:18:12.353685: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200120000 Hz
 2019-03-20 13:18:12.354932: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x4282330 executing computations on platform Host. Devices:
 2019-03-20 13:18:12.354988: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+Time passed: 11hour:42min:15sec
+
+real	702m20.447s
+user	10494m22.323s
+sys	1906m13.276s
