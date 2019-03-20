@@ -206,3 +206,17 @@ Use tf.cast instead.
 2019-03-20 02:30:52.084052: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
 2019-03-20 02:30:52.084312: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3c7c5b0 executing computations on platform Host. Devices:
 2019-03-20 02:30:52.084341: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/david/vp368cpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-03-20 09:18:18.150136: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200085000 Hz
+2019-03-20 09:18:18.151329: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x496e6e0 executing computations on platform Host. Devices:
+2019-03-20 09:18:18.151372: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+Time passed: 7hour:25min:48sec
+
+real	446m3.423s
+user	6667m30.765s
+sys	1197m8.287s
