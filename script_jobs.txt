@@ -1,0 +1,16 @@
+# Scripts + jobs:
+
+ORION:
+
+Scripts 
+5080 - tuning_regression_precipitation_R1.sh
+5088 - tuning_regression_precipitation_R2.sh
+5089 - tuning_regression_precipitation_W1.sh
+5090 - tuning_regression_precipitation_W2.sh
+
+HELIOS:
+
+39939 - tuning_regression_precipitation_R3.sh
+39940 - tuning_regression_precipitation_R4.sh
+39941 - tuning_regression_precipitation_W3.sh
+39942 - tuning_regression_precipitation_W4.sh
