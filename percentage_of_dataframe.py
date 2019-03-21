@@ -23,11 +23,11 @@ df_rain = pd.read_csv(os.path.join(path, file), sep=',', decimal='.', encoding="
 # ----------------------------------------
 n = 0.90
 to_remove = np.random.choice(
-        df_rain[df_rain['CLASSE']=='C1'].index,
-        size=int(df_rain[df_rain['CLASSE']=='C1'].shape[0]*n),
+        df_rain.index,
+        size=int(df_rain.shape[0]*n),
         replace=False)
 
-df_rain = df_rain.drop(to_remove)
+df_rain_2 = df_rain.drop(to_remove)
 
 # Saving the new output DB's (rain and no rain):
 file_name = os.path.splitext(file)[0] + "_10pct.csv"
