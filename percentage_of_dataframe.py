@@ -12,7 +12,7 @@ import os
 from collections import Counter
 
 
-path = '/media/DATA/tmp/datasets/brazil/brazil_qgis/csv/'
+path = 'home/david/DATA/'
 file = 'yrly_br_under_c1_over_c3c4.csv'
 #for file in os.listdir(path):
 print('reading file: ' + path + file)
