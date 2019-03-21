@@ -6,7 +6,8 @@ Created on Wed Mar 20 21:31:04 2019
 @author: dvdgmf
 """
 # https://www.tensorflow.org/tutorials/keras/basic_regression
-
+#------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 from __future__ import absolute_import, division, print_function
 
 import pathlib
@@ -14,36 +15,23 @@ import pathlib
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
+import os
 
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 
 print(tf.__version__)
+#------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
+# Define the Dataframe and input/output variables:
 
-dataset_path = keras.utils.get_file("auto-mpg.data", "https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data")
-dataset_path
-
-column_names = ['MPG','Cylinders','Displacement','Horsepower','Weight',
-                'Acceleration', 'Model Year', 'Origin'] 
-raw_dataset = pd.read_csv(dataset_path, names=column_names,
-                      na_values = "?", comment='\t',
-                      sep=" ", skipinitialspace=True)
-
-dataset = raw_dataset.copy()
-dataset.tail()
-
-# Clean the data
-# The dataset contains a few unknown values.
-dataset.isna().sum()
-# To keep this initial tutorial simple drop those rows. 
-dataset = dataset.dropna()
-# The "Origin" column is really categorical, not numeric. So convert that to a one-hot:
-origin = dataset.pop('Origin')
-dataset['USA'] = (origin == 1)*1.0
-dataset['Europe'] = (origin == 2)*1.0
-dataset['Japan'] = (origin == 3)*1.0
-dataset.tail()
+#path = '/home/david/DATA/'
+path = '/media/DATA/tmp/datasets/brazil/brazil_qgis/csv/'
+file = 'yrly_br_under_c1_over_c3c4_10pct.csv'
+dataset = pd.read_csv(os.path.join(path, file), sep=',', decimal='.')
+#x, y= df.loc[:,['36V', '89V', '166V', '186V', '190V', '36VH', '89VH',
+#                        '166VH', '183VH', 'PCT36', 'PCT89']], df.loc[:,['sfcprcp']]
 
 # Split the data into train and test
 # Now split the dataset into a training set and a test set.
@@ -55,20 +43,20 @@ test_dataset = dataset.drop(train_dataset.index)
 # Inspect the data
 # Have a quick look at the joint distribution of a few pairs of columns from the training set.
 
-sns.pairplot(train_dataset[["MPG", "Cylinders", "Displacement", "Weight"]], diag_kind="kde")
+sns.pairplot(train_dataset[["sfcprcp", "36V", "89V","PCT89"]], diag_kind="kde")
 
 # Also look at the overall statistics:
 
 train_stats = train_dataset.describe()
-train_stats.pop("MPG")
+train_stats.pop("sfcprcp")
 train_stats = train_stats.transpose()
 train_stats
 
 # Split features from labels:
 # Separate the target value, or "label", from the features. This label is the value that you will train the model to predict.
 
-train_labels = train_dataset.pop('MPG')
-test_labels = test_dataset.pop('MPG')
+y_train = train_dataset.pop('sfcprcp')
+y_test = test_dataset.pop('sfcprcp')
 
 # Normalize the data:
 # Look again at the train_stats block above and note how different the ranges 
@@ -132,7 +120,7 @@ class PrintDot(keras.callbacks.Callback):
 EPOCHS = 1000
 
 history = model.fit(
-  normed_train_data, train_labels,
+  normed_train_data, y_train,
   epochs=EPOCHS, validation_split = 0.2, verbose=0,
   callbacks=[PrintDot()])
 
@@ -184,7 +172,7 @@ model = build_model()
 # The patience parameter is the amount of epochs to check for improvement
 early_stop = keras.callbacks.EarlyStopping(monitor='val_loss', patience=10)
 
-history = model.fit(normed_train_data, train_labels, epochs=EPOCHS,
+history = model.fit(normed_train_data, y_train, epochs=EPOCHS,
                     validation_split = 0.2, verbose=0, callbacks=[early_stop, PrintDot()])
 
 plot_history(history)
@@ -198,7 +186,7 @@ plot_history(history)
 # This tells us how well we can expect the model to predict 
 # when we use it in the real world.
 
-loss, mae, mse = model.evaluate(normed_test_data, test_labels, verbose=0)
+loss, mae, mse = model.evaluate(normed_test_data, y_test, verbose=0)
 
 print("Testing set Mean Abs Error: {:5.2f} MPG".format(mae))
 
@@ -207,7 +195,7 @@ print("Testing set Mean Abs Error: {:5.2f} MPG".format(mae))
 
 test_predictions = model.predict(normed_test_data).flatten()
 
-plt.scatter(test_labels, test_predictions)
+plt.scatter(y_test, test_predictions)
 plt.xlabel('True Values [MPG]')
 plt.ylabel('Predictions [MPG]')
 plt.axis('equal')
@@ -219,7 +207,7 @@ _ = plt.plot([-100, 100], [-100, 100])
 # It looks like our model predicts reasonably well. 
 # Let's take a look at the error distribution.
 
-error = test_predictions - test_labels
+error = test_predictions - y_test
 plt.hist(error, bins = 25)
 plt.xlabel("Prediction Error [MPG]")
 _ = plt.ylabel("Count")
