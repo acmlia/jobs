@@ -1,0 +1,12 @@
+Running on host node006
+Time is Fri Mar 22 00:01:46 -03 2019
+Directory is /home/david/git-repos/jobs
+Slurm job ID is 39997
+This job runs on the following machines:
+node006
+Running /home/david/venv366tfcpu/bin/python /home/david/git-repos/jobs/tf_regression_scfprcp_T1.py
+/home/david/venv366tfcpu/bin/python: can't open file '/home/david/git-repos/jobs/tf_regression_scfprcp_T1.py': [Errno 2] No such file or directory
+
+real	0m0.307s
+user	0m0.054s
+sys	0m0.013s

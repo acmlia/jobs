@@ -16,7 +16,7 @@ workdir="/home/david/git-repos/jobs"
 application="$(which python)"
 
 # Run options for the application
-options="$workdir/tf_regression_scfprcp_T1.py"
+options="$workdir/tf_regression_sfcprcp_T1.py"
 
 ###############################################################
 ### You should not have to change anything below this line ####

@@ -1,0 +1,15 @@
+Running on host node006
+Time is Thu Mar 21 00:03:50 -03 2019
+Directory is /home/david/git-repos/jobs
+Slurm job ID is 39971
+This job runs on the following machines:
+node006
+Running /home/david/venv366tfcpu/bin/python /home/david/git-repos/jobs/helios_tf-regression-mpg.py
+Traceback (most recent call last):
+  File "/home/david/git-repos/jobs/helios_tf-regression-mpg.py", line 15, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+
+real	0m0.350s
+user	0m0.071s
+sys	0m0.018s

@@ -6,7 +6,7 @@
 
 # If modules are needed by the script, then source modules environment:
 . /etc/profile.d/modules.sh
-. $HOME/vp368cpu/bin/activate
+. $HOME/venv366tfcpu/bin/activate
 #module add cuda80/toolkit/8.0.61
 # Work directory
 #workdir="$SLURM_SUBMIT_DIR"

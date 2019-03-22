@@ -1,0 +1,53 @@
+Running on host node006
+Time is Thu Mar 21 00:07:30 -03 2019
+Directory is /home/david/git-repos/jobs
+Slurm job ID is 39972
+This job runs on the following machines:
+node006
+Running /home/david/venv366tfcpu/bin/python /home/david/git-repos/jobs/helios_tf-regression-mpg.py
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/keras/utils/losses_utils.py:170: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-03-21 00:07:37.962103: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-21 00:07:37.964273: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x4902140 executing computations on platform Host. Devices:
+2019-03-21 00:07:37.964336: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+1.13.1
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense (Dense)                (None, 64)                768       
+_________________________________________________________________
+dense_1 (Dense)              (None, 64)                4160      
+_________________________________________________________________
+dense_2 (Dense)              (None, 1)                 65        
+=================================================================
+Total params: 4,993
+Trainable params: 4,993
+Non-trainable params: 0
+_________________________________________________________________
+
+....................................................................................................
+....................................................................................................
+....................................................................................................
+....................................................................................................
+....................................................................................................
+....................................................................................................
+....................................................................................................
+....................................................................................................
+....................................................................................................
+....................................................................................................
+...........................................................Testing set Mean Abs Error:  7.02 sfcprcp
+Traceback (most recent call last):
+  File "/home/david/git-repos/jobs/helios_tf-regression-mpg.py", line 216, in <module>
+    fig.savefig('error_distribution.png')
+AttributeError: 'tuple' object has no attribute 'savefig'
+
+real	19m10.146s
+user	39m52.980s
+sys	4m31.097s

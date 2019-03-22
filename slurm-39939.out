@@ -1,0 +1,496 @@
+Running on host node006
+Time is Tue Mar 19 22:47:25 -03 2019
+Directory is /home/david/git-repos/jobs
+Slurm job ID is 39939
+This job runs on the following machines:
+node006
+Running /home/david/venv366tfcpu/bin/python /home/david/git-repos/jobs/tuning_regression_precipitation_R3.py
+Using TensorFlow backend.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-03-19 22:47:50.326451: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.326451: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.326523: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.326622: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.327000: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.328049: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.328735: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9870 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.328818: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.328901: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.329148: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.329911: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9ea0 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.329945: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.330025: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3eea5b0 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.330061: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.330399: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.331649: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3eea990 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.331687: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.331873: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9c20 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.331910: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.332409: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.333004: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9fe0 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.333039: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.336689: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.337189: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.337640: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3eea050 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.337680: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.337995: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3eea8c0 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.338029: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.338044: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3eea0b0 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.338099: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.338430: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.338895: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.338934: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.339649: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.339838: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3eea170 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.339886: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.340274: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3eea4e0 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.340334: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.341097: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.341697: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.342116: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9a60 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.342140: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.342168: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.342318: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9670 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.342359: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.342852: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3eea140 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.342893: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.343424: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9a10 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.343462: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.343631: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9cd0 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.343667: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.344381: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.344753: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.345004: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9a00 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.345042: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.345322: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9240 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.345363: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.345570: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.346859: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9b70 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.346885: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.347333: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3eeaa10 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.347372: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.349164: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9200 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.349203: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.365475: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3eea120 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.365541: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.366866: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.374670: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.374771: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.376904: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3eea650 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.376939: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.377613: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9860 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.377680: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.383442: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9f40 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.383511: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.391938: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.393814: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9b70 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.393860: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.399206: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.404141: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3eea6f0 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.404210: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.416510: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.418634: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9f40 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.418706: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.422119: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.424145: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9690 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.424204: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.460888: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.463539: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3eea070 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.463615: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.486142: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.488528: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3eea960 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.488574: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.490142: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.495532: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9cc0 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.495601: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.496539: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.499081: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9f60 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.499111: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.502622: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.503650: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.504103: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.504319: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3eea1c0 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.504344: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.505682: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9440 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.505715: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.506064: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee9ae0 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.506089: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.506566: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.506807: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.508202: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200025000 Hz
+2019-03-19 22:47:50.509035: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3eea1b0 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.509061: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.509101: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ee93a0 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.509126: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-03-19 22:47:50.510683: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3eea050 executing computations on platform Host. Devices:
+2019-03-19 22:47:50.510720: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+terminate called after throwing an instance of 'terminate called after throwing an instance of 'terminate called after throwing an instance of 'std::system_errorstd::system_errorstd::system_error'
+'
+'
+  what():  Resource temporarily unavailable  what():    what():  
+Resource temporarily unavailableResource temporarily unavailable
+
+terminate called after throwing an instance of 'terminate called after throwing an instance of 'terminate called after throwing an instance of 'std::system_errorstd::system_errorterminate called after throwing an instance of 'std::system_error'
+'
+terminate called after throwing an instance of 'terminate called after throwing an instance of 'terminate called after throwing an instance of 'terminate called after throwing an instance of 'terminate called after throwing an instance of 'std::system_error'
+terminate called after throwing an instance of 'std::system_error  what():  std::system_error  what():  terminate called after throwing an instance of 'std::system_errorstd::system_errorstd::system_error'
+std::system_error'
+Resource temporarily unavailable  what():  '
+Resource temporarily unavailablestd::system_error'
+'
+'
+'
+
+Resource temporarily unavailable  what():    what():  
+  what():  '
+  what():  
+  what():  Resource temporarily unavailable  what():  Resource temporarily unavailableResource temporarily unavailable  what():  Resource temporarily unavailableResource temporarily unavailable
+Resource temporarily unavailable
+
+Resource temporarily unavailable
+
+
+
+  what():  Resource temporarily unavailable
+terminate called after throwing an instance of 'std::system_error'
+  what():  Resource temporarily unavailable
+exception calling callback for <Future at 0x2aab083950f0 state=finished raised TerminatedWorkerError>
+Traceback (most recent call last):
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/externals/joblib/externals/loky/_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/externals/joblib/parallel.py", line 309, in __call__
+    self.parallel.dispatch_next()
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/externals/joblib/parallel.py", line 731, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/externals/joblib/parallel.py", line 759, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/externals/joblib/parallel.py", line 716, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/externals/joblib/_parallel_backends.py", line 510, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/externals/joblib/externals/loky/reusable_executor.py", line 151, in submit
+    fn, *args, **kwargs)
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/externals/joblib/externals/loky/process_executor.py", line 1022, in submit
+    raise self._flags.broken
+sklearn.externals.joblib.externals.loky.process_executor.TerminatedWorkerError: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker. The exit codes of the workers are {SIGABRT(-6), SIGABRT(-6)}
+Traceback (most recent call last):
+  File "/home/david/git-repos/jobs/tuning_regression_precipitation_R3.py", line 125, in <module>
+    grid_result = training_model.run_TuningRegressionPrecipitation()
+  File "/home/david/git-repos/jobs/tuning_regression_precipitation_R3.py", line 101, in run_TuningRegressionPrecipitation
+    grid_result = grid_model.fit(x_train, y_train)
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/model_selection/_search.py", line 722, in fit
+    self._run_search(evaluate_candidates)
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/model_selection/_search.py", line 1191, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/model_selection/_search.py", line 711, in evaluate_candidates
+    cv.split(X, y, groups)))
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/externals/joblib/parallel.py", line 930, in __call__
+    self.retrieve()
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/externals/joblib/parallel.py", line 833, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/externals/joblib/_parallel_backends.py", line 521, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "/home/david/py36/lib/python3.6/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/home/david/py36/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/externals/joblib/externals/loky/_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/externals/joblib/parallel.py", line 309, in __call__
+    self.parallel.dispatch_next()
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/externals/joblib/parallel.py", line 731, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/externals/joblib/parallel.py", line 759, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/externals/joblib/parallel.py", line 716, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/externals/joblib/_parallel_backends.py", line 510, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/externals/joblib/externals/loky/reusable_executor.py", line 151, in submit
+    fn, *args, **kwargs)
+  File "/home/david/venv366tfcpu/lib/python3.6/site-packages/sklearn/externals/joblib/externals/loky/process_executor.py", line 1022, in submit
+    raise self._flags.broken
+sklearn.externals.joblib.externals.loky.process_executor.TerminatedWorkerError: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker. The exit codes of the workers are {SIGABRT(-6), SIGABRT(-6)}
+
+real	0m27.495s
+user	3m17.356s
+sys	1m25.141s

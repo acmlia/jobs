@@ -1,0 +1,49 @@
+Running on host node001
+Time is Fri Mar 22 00:04:34 -03 2019
+Directory is /home/david/git-repos/jobs
+Slurm job ID is 39999
+This job runs on the following machines:
+node001
+Running /home/david/venv366tfcpu/bin/python /home/david/git-repos/jobs/tf_regression_sfcprcp_T2.py
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/keras/utils/losses_utils.py:170: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-03-22 00:04:50.168110: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200240000 Hz
+2019-03-22 00:04:50.170138: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3a752c0 executing computations on platform Host. Devices:
+2019-03-22 00:04:50.170164: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+WARNING:tensorflow:From /home/david/venv366tfcpu/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+1.13.1
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense (Dense)                (None, 24)                288       
+_________________________________________________________________
+dense_1 (Dense)              (None, 12)                300       
+_________________________________________________________________
+dense_2 (Dense)              (None, 1)                 13        
+=================================================================
+Total params: 601
+Trainable params: 601
+Non-trainable params: 0
+_________________________________________________________________
+
+....................................................................................................
+....................................................................................................
+....................................................................................................
+....................................................................................................
+....................................................................................................
+....................................................................................................
+....................................................................................................
+....................................................................................................
+....................................................................................................
+....................................................................................................
+..................................Testing set Mean Abs Error:  1.40 sfcprcp
+
+real	129m52.115s
+user	280m11.410s
+sys	37m46.054s
