@@ -1,0 +1,291 @@
+# Scripts:
+#-----------------------------------------
+tf_regression_scfprcp_T1.py:
+
+% of test: 10%
+attributes: 11
+th_rain: 0.1
+neurons: 24 e 12
+activation: relu
+solver: Adam (0.001)
+metrics: MAE e MSE
+scaler:standardscaler
+#-----------------------------------------
+tf_regression_scfprcp_T2.py: 
+
+% of teste: 10%
+attributes: 11
+th_rain: 0.1
+neurons: 24 e 12
+activation: relu
+solver: Adam (0.001)
+metrics: MAE e MSE
+scaler: quantile tranform = 'normal'
+#-----------------------------------------
+tf_regression_scfprcp_T3.py: 
+
+% of teste: 10%
+attributes: 11
+th_rain: 
+neurons: 24 e 12
+activation: relu
+solver: Adam (0.001)
+metrics: MAE e MSE
+scaler: quantile tranform = 'uniforme'
+#-----------------------------------------
+tf_regression_scfprcp_T4.py:
+
+% of teste: 10%
+attributes: 11
+th_rain: 0.5
+neurons: 24 e 12
+activation: relu
+solver: Adam (0.001)
+metrics: MAE e MSE
+scaler: quantile tranform = 'normal' 
+#-----------------------------------------
+tf_regression_scfprcp_T5.py: 
+
+% of teste: 10%
+attributes: 11
+th_rain: 0.5
+neurons: 24 e 12
+activation: relu
+solver: Adam (0.001)
+metrics: MAE e MSE
+scaler: quantile tranform = 'uniform' 
+
+#-----------------------------------------
+tf_regression_scfprcp_T6.py: 
+
+% of teste: 10%
+attributes: 11
+th_rain: 0.1
+neurons: 24 e 12
+activation: relu
+solver: SGD (0.01)
+metrics: MAE e MSE
+scaler: standard 
+
+#-----------------------------------------
+tf_regression_scfprcp_T7.py: 
+
+% of teste: 10%
+attributes: 11
+th_rain: 0.1
+neurons: 24 e 12
+activation: relu
+solver: Adagrad (0.01)
+metrics: MAE e MSE
+scaler: standard 
+
+#-----------------------------------------
+tf_regression_scfprcp_T8.py: 
+
+% of teste: 10%
+attributes: 11
+th_rain: 0.1
+neurons: 24 e 12
+activation: relu
+solver: Adagrad (0.001)
+metrics: MAE e MSE
+scaler: standard 
+
+#-----------------------------------------
+tf_regression_scfprcp_T9.py: 
+
+% of teste: 10%
+attributes: 11
+th_rain: 0.5 a 40
+neurons: 24 e 12
+activation: relu
+solver: Adam (0.001)
+metrics: MAE e MSE
+scaler: standard 
+#-----------------------------------------
+tf_regression_scfprcp_T10.py: 
+
+% of teste: 10%
+attributes: 11
+th_rain: 20 a 40
+neurons: 24 e 12
+activation: relu
+solver: Adam (0.001)
+metrics: MAE e MSE
+scaler: standard 
+#-----------------------------------------
+tf_regression_scfprcp_T11.py: 
+
+% of teste: 10%
+attributes: 11
+th_rain: 10 a 40
+neurons: 24 e 12
+activation: relu
+solver: Adam (0.001)
+metrics: MAE e MSE
+scaler: standard 
+
+#-----------------------------------------
+tf_regression_scfprcp_T12.py: 
+
+% of teste: 10%
+attributes: 5 (36V,89V,166V,190V,PCT89)
+th_rain: 0.1
+neurons: 24 e 12
+activation: relu
+solver: Adam (0.001)
+metrics: MAE e MSE
+scaler: standard 
+#-----------------------------------------
+tf_regression_scfprcp_T12.py: 
+
+% of teste: 10%
+attributes: 8 (36V,36H,89V,89H,166V,166H,186V,190V)
+th_rain: 0.5
+neurons: 24 e 12
+activation: relu
+solver: Adam (0.001)
+metrics: MAE e MSE
+scaler: standard 
+#-----------------------------------------
+tf_regression_scfprcp_T12.py: 
+
+% of teste: 10%
+attributes: 8 (36V,36H,89V,89H,166V,166H,186V,190V)
+th_rain: 0.5
+neurons: 24 e 12
+activation: relu
+solver: Adam (0.001)
+metrics: MAE e MSE
+#-----------------------------------------
+tf_regression_scfprcp_T13.py: 
+
+% of teste: 10%
+attributes: 8 (36V,36H,89V,89H,166V,166H,186V,190V)
+th_rain: 0.5
+neurons: 24 e 12
+activation: relu
+solver: Adam (0.001)
+metrics: MAE e MSE
+Noise: GaussianNoise = 0.01
+#-----------------------------------------
+tf_regression_scfprcp_T14.py: 
+
+% of teste: 10%
+attributes: 8 (36V,36H,89V,89H,166V,166H,186V,190V)
+th_rain: 0.5
+neurons: 24 e 12
+activation: relu
+solver: Adam (0.001)
+metrics: MAE e MSE
+Noise: GaussianNoise = 0.01
+#-----------------------------------------
+tf_regression_scfprcp_T15.py: 
+
+% of teste: 10%
+attributes: 8 (36V,36H,89V,89H,166V,166H,186V,190V)
+th_rain: 0.5
+neurons: 24 e 12
+activation: relu
+solver: Adam (0.001)
+metrics: MAE e MSE
+Noise: GaussianNoise = 0.01
+#-----------------------------------------
+
+#-----------------------------------------
+tf_regression_scfprcp_T18.py: 
+
+seed = 7
+% of teste: 10%
+attributes: '183VH','sfccode','T2m','tcwv','PCT36','PCT89','89VH'
+th_rain: 0.5
+neurons: 27 e 17
+activation: relu
+solver: Adam (0.001)
+metrics: MAE e MSE
+Noise: GaussianNoise = 0.01
+#-----------------------------------------
+tf_regression_scfprcp_T19.py: 
+
+seed = 7
+% of teste: 10%
+attributes: '183VH','sfccode','T2m','tcwv','PCT36','PCT89','89VH'
+th_rain: 0.5 e 60
+neurons: 27 e 17
+activation: relu
+solver: Adam (0.001)
+metrics: MAE e MSE
+Noise: GaussianNoise = 0.01
+
+#-----------------------------------------
+tf_regression_scfprcp_T20.py: 
+
+#-----------------------------------------
+tf_regression_scfprcp_T21.py: 
+
+seed = 7
+% of teste: 10%
+attributes: '183VH','sfccode','T2m','tcwv','PCT36','PCT89','89VH'
+th_rain: 0.5 e 100
+neurons: 22 e 11
+activation: linear
+solver: Adam (0.001)
+metrics: MAE e MSE
+Noise: GaussianNoise = 0.01
+
+#-----------------------------------------
+tf_regression_scfprcp_T22.py: 
+
+seed = 7
+% of teste: 10%
+attributes: 12 inputs
+th_rain: 0.5 e 100
+neurons: 22 e 11
+activation: linear
+solver: Adam (0.001)
+metrics: MAE e MSE
+Noise: GaussianNoise = 0.01
+Scaler: att-standard e sfcprcp com log
+
+#-----------------------------------------
+tf_regression_scfprcp_T17B.py: 
+
+% of teste: 10%
+attributes: 11 - 4 PCA + '183VH','sfccode','T2m','tcwv','PCT36','PCT89','89VH'
+th_rain: 0.1
+neurons: 24 e 12
+activation: relu
+solver: Adam (0.001)
+metrics: MAE e MSE
+Noise: GaussianNoise = 0.01
+Scaler: standard scaler
+
+#-----------------------------------------
+tf_regression_scfprcp_T17B1.py: 
+
+% of teste: 10%
+attributes: 11 - 4 PCA + '183VH','sfccode','T2m','tcwv','PCT36','PCT89','89VH'
+th_rain: 0.5 e 100
+neurons: 24 e 12
+activation: linear
+solver: Adam (0.001)
+metrics: MAE e MSE
+Noise: GaussianNoise = 0.01
+Scaler: standard scaler
+#-----------------------------------------
+tf_regression_scfprcp_T17B2.py: 
+
+% of teste: 10%
+attributes: 11 - 4 PCA + '183VH','sfccode','T2m','tcwv','PCT36','PCT89','89VH'
+th_rain: 0.1
+neurons: 11 e 5
+activation: relu
+solver: Adam (0.001)
+metrics: MAE e MSE
+Noise: GaussianNoise = 0.01
+Scaler: standard scaler
+#-----------------------------------------
+
+
+
+

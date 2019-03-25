@@ -164,7 +164,7 @@ dataset=dataset.join(df_orig.loc[:,['sfcprcp']], how='right')
 #------------------------------------------------------------------------------
 #------------------------------------------------------------------------------
 
-#dataset = keep_interval(0.5, 100.0, dataset, 'sfcprcp')
+dataset = keep_interval(0.5, 100.0, dataset, 'sfcprcp')
 # scale the output between 0 and 1 for the colorbar
 # y = minmax_scale(y_full)
 
@@ -176,9 +176,9 @@ dataset=dataset.join(df_orig.loc[:,['sfcprcp']], how='right')
 #plt.plot(x_array)
 #plt.show()    
 
-threshold_rain =0.5
-rain_pixels = np.where((dataset['sfcprcp'] >= threshold_rain))
-dataset=dataset.iloc[rain_pixels]        
+#threshold_rain =0.5
+#rain_pixels = np.where((dataset['sfcprcp'] >= threshold_rain))
+#dataset=dataset.iloc[rain_pixels]        
 
 #         
 # ----------------------------------------
@@ -267,8 +267,8 @@ normed_test_data = scaler.fit_transform(test_dataset)
 def build_model():
     model = Sequential()
     model.add(GaussianNoise(0.01, input_shape=[len(train_dataset.keys())] ))
-    model.add(Dense(24, activation='relu'))
-    model.add(Dense(12, activation='relu'))
+    model.add(Dense(22, activation='relu'))
+    model.add(Dense(11, activation='relu'))
     model.add(Dense(1))
     model.compile(loss='mean_squared_error',
               optimizer='adam',

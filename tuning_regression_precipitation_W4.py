@@ -12,6 +12,7 @@ from keras.models import Sequential
 from keras.layers import Dense
 from keras.optimizers import SGD
 from keras.wrappers.scikit_learn import KerasRegressor
+
 #from collections import Counter
 #from keras.callbacks import ModelCheckpoint
 #from imblearn.over_sampling import SMOTE # doctest: +NORMALIZE_WHITESPACE

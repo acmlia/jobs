@@ -11,17 +11,26 @@ Created on Wed Mar 20 21:31:04 2019
 from __future__ import absolute_import, division, print_function
 
 import os
-#import time
+import time
 import pandas as pd
 import numpy as np
-#import seaborn as sns
+import seaborn as sns
+from collections import Counter
 import matplotlib.pyplot as plt
-#from sklearn.externals import joblib
-from sklearn.preprocessing import StandardScaler
+from sklearn.externals import joblib
+#from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import QuantileTransformer
+
 
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
+from keras.layers import GaussianNoise
+from keras.layers import GaussianDropout
+from keras.models import Sequential
+from keras.layers import Dense
+from keras.models import model_from_yaml
+
 
 print(tf.__version__)
 
@@ -42,31 +51,54 @@ seed = 7
 np.random.seed(seed)
 #------------------------------------------------------------------------------
 #------------------------------------------------------------------------------
-# Define the Dataframe and input/output variables:
+# Path, file and load DATAFRAME
 
+file = 'yearly_br_underc1_0956.csv'
+path = '/media/DATA/tmp/datasets/brazil/brazil_qgis/csv/'
+fig_title = 'tf_regression_T2_undc1_0956_'
+path_fig = '/media/DATA/tmp/git-repositories/jobs/tf_regression_figures/'
 
-path = '/home/david/DATA/'
-file = 'yrly_br_under_c1.csv'
-fig_title = 'tf_regression_T1_under_c1'
-path_fig = '/home/david/DATA/'
+df_orig = pd.read_csv(os.path.join(path, file), sep=',', decimal='.')
 
-#path = '/media/DATA/tmp/datasets/brazil/brazil_qgis/csv/'
+#path = '/home/david/DATA/'
+#file = 'yrly_br_under_c1.csv'
+#path_fig = '/home/david/DATA/'
 #file = 'yrly_br_under_c1_over_c3c4.csv'
 #file_name = os.path.splitext(file)[0]
-#path_fig = '/media/DATA/tmp/git-repositories/jobs/tf_regression_figures/'
 
-dataset_orig = pd.read_csv(os.path.join(path, file), sep=',', decimal='.')
-dataset_orig=dataset_orig.drop(columns=['CLASSE'])
-dataset = dataset_orig
+#------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
+# Count the number of pixels by classs:
 
+colunas = list(df_orig.columns.values)
+df_orig = df_orig.loc[:,colunas]
+x, y = df_orig.loc[:,colunas], df_orig.loc[:,['CLASSE']]
+x_arr = np.asanyarray(x)
+y_arr = np.asanyarray(y)
+y_arr = np.ravel(y_arr)
+print('Original dataset shape %s' % Counter(y_arr))
+
+#------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
+dataset=df_orig.drop(columns=['lat','lon','sfccode', 'T2m','tcwv','skint',
+                              'cnvprcp','10V','10H','18V','18H','23V','36H',
+                              '89H','166H','10VH','18VH','SSI','delta_neg',
+                              'delta_pos','MPDI','MPDI_scaled','PCT10','PCT18',
+                              'TagRain', 'CLASSE'])
+#df_orig['sfcprcp']=df_orig[['sfcprcp']].astype(int)
+
+threshold_rain =0.1
+rain_pixels = np.where((dataset['sfcprcp'] >= threshold_rain))
+dataset=dataset.iloc[rain_pixels]
+         
 # ----------------------------------------
 # SUBSET BY SPECIFIC CLASS (UNDERSAMPLING)
-#n = 0.99
-#to_remove = np.random.choice(
-#        dataset_orig.index,
-#        size=int(dataset_orig.shape[0]*n),
-#        replace=False)
-#dataset = dataset_orig.drop(to_remove)
+n = 0.90
+to_remove = np.random.choice(
+        dataset.index,
+        size=int(dataset.shape[0]*n),
+        replace=False)
+dataset = dataset.drop(to_remove)
 
 #------------------------------------------------------------------------------
 #------------------------------------------------------------------------------
@@ -82,8 +114,8 @@ test_dataset = dataset.drop(train_dataset.index)
 # Inspect the data:
 # Have a quick look at the joint distribution of a few pairs of columns from the training set.
 
-colunas = list(dataset_orig.columns.values)
-#sns.pairplot(dataset_orig[colunas], diag_kind="kde")
+colunas = list(dataset.columns.values)
+#sns.pairplot(df_orig[colunas], diag_kind="kde")
 #sns.pairplot(train_dataset[colunas], diag_kind="kde")
 #sns.pairplot(test_dataset[colunas], diag_kind="kde")
 
@@ -120,7 +152,8 @@ y_test = test_dataset.pop('sfcprcp')
 #normed_train_data = norm(train_dataset)
 #normed_test_data = norm(test_dataset)
 
-scaler = StandardScaler()
+
+scaler=QuantileTransformer(output_distribution='normal')
 normed_train_data = scaler.fit_transform(train_dataset)
 normed_test_data = scaler.fit_transform(test_dataset)
 
@@ -130,8 +163,8 @@ normed_test_data = scaler.fit_transform(test_dataset)
 
 def build_model():
     model = keras.Sequential([
-            layers.Dense(24, activation=tf.nn.softmax, input_shape=[len(train_dataset.keys())]),
-            layers.Dense(12, activation=tf.nn.softmax),
+            layers.Dense(24, activation=tf.nn.relu, input_shape=[len(train_dataset.keys())]),
+            layers.Dense(12, activation=tf.nn.relu),
             layers.Dense(1)
             ])
     optimizer = tf.keras.optimizers.Adam(0.001)
@@ -139,6 +172,17 @@ def build_model():
                   optimizer=optimizer,
                   metrics=['mean_absolute_error', 'mean_squared_error'])
     return model
+
+#def build_model():
+#    model = Sequential()
+#    model.add(GaussianDropout(0.01, input_shape=[len(train_dataset.keys())] ))
+#    model.add(Dense(24, activation='relu'))
+#    model.add(Dense(12, activation='relu'))
+#    model.add(Dense(1))
+#    model.compile(loss='mean_squared_error',
+#              optimizer='adam',
+#              metrics=['mean_absolute_error', 'mean_squared_error'])   
+#    return model
 
 model = build_model()
 
@@ -181,6 +225,7 @@ history = model.fit(
   normed_train_data, y_train,
   epochs=EPOCHS, validation_split = 0.2, verbose=0,
   callbacks=[PrintDot()])
+print(history.history.keys())
 
 #------------------------------------------------------------------------------
 #------------------------------------------------------------------------------
@@ -322,6 +367,32 @@ plt.clf()
 #    _start_time = time.time()
 #
 #    tic()
+
+# serialize model to YAML
+model_yaml = model.to_yaml()
+with open("tf_regression_T2.yaml", "w") as yaml_file:
+    yaml_file.write(model_yaml)
+# serialize weights to HDF5
+model.save_weights("tf_regression_T2.h5")
+print("Saved model to disk")
+# 
+## later...
+# 
+## load YAML and create model
+#yaml_file = open('model.yaml', 'r')
+#loaded_model_yaml = yaml_file.read()
+#yaml_file.close()
+#loaded_model = model_from_yaml(loaded_model_yaml)
+## load weights into new model
+#loaded_model.load_weights("model.h5")
+#print("Loaded model from disk")
+# 
+## evaluate loaded model on test data
+#loaded_model.compile(loss='mean_squared_error',
+#              optimizer='adam',
+#              metrics=['mean_absolute_error', 'mean_squared_error'])
+#score = loaded_model.evaluate(normed_test_data, y_test, verbose=0)
+#print("%s: %.2f%%" % (loaded_model.metrics_names[1], score[1]))
 #    
 #    training_model = history
 #    #grid_result = training_model.run_TuningRegressionPrecipitation()

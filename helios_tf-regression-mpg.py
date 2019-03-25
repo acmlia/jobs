@@ -26,24 +26,28 @@ print(tf.__version__)
 #------------------------------------------------------------------------------
 # Define the Dataframe and input/output variables:
 
-path = '/home/david/DATA/'
-#path = '/media/DATA/tmp/datasets/brazil/brazil_qgis/csv/'
-file = 'yrly_br_under_c1_over_c3c4_10pct.csv'
-dataset = pd.read_csv(os.path.join(path, file), sep=',', decimal='.')
+#path = '/home/david/DATA/'
+path = '/media/DATA/tmp/datasets/brazil/brazil_qgis/csv/'
+file = 'yrly_br_under_c1.csv'
+df = pd.read_csv(os.path.join(path, file), sep=',', decimal='.')
 #x, y= df.loc[:,['36V', '89V', '166V', '186V', '190V', '36VH', '89VH',
 #                        '166VH', '183VH', 'PCT36', 'PCT89']], df.loc[:,['sfcprcp']]
+dataset_orig = df.drop(['CLASSE'], axis = 1)
 
 # Split the data into train and test
 # Now split the dataset into a training set and a test set.
 # We will use the test set in the final evaluation of our model.
 
-train_dataset = dataset.sample(frac=0.8,random_state=0)
-test_dataset = dataset.drop(train_dataset.index)
+train_dataset = dataset_orig.sample(frac=0.8,random_state=0)
+test_dataset = dataset_orig.drop(train_dataset.index)
 
 # Inspect the data
 # Have a quick look at the joint distribution of a few pairs of columns from the training set.
 
-sns.pairplot(train_dataset[["sfcprcp", "36V", "89V","PCT89"]], diag_kind="kde")
+colunas = list(dataset_orig.columns.values)
+sns.pairplot(dataset_orig[[colunas]], diag_kind="kde")
+sns.pairplot(train_dataset[[colunas]], diag_kind="kde")
+sns.pairplot(test_dataset[[colunas]], diag_kind="kde")
 
 # Also look at the overall statistics:
 
