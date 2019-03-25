@@ -63,17 +63,12 @@ np.random.seed(seed)
 #------------------------------------------------------------------------------
 # Path, file and load DATAFRAME
 
-vrn = 'bnk2'
+vrn = 'T17B6'
 
 file = 'yearly_br_underc1_0956.csv'
-path = '/home/david/CSV/'
+path = '/media/DATA/tmp/datasets/brazil/brazil_qgis/csv/'
 fig_title = 'tf_regression_'+vrn+'_undc1_0956_'
-path_fig = '/home/david/figs/'
-
-#file = 'yearly_br_underc1_0956.csv'
-#path = '/media/DATA/tmp/datasets/brazil/brazil_qgis/csv/'
-#fig_title = 'tf_regression_bnk1_undc1_0956_'
-#path_fig = '/media/DATA/tmp/git-repositories/jobs/tf_regression_figures/'
+path_fig = '/media/DATA/tmp/git-repositories/jobs/tf_regression_figures/'
 
 df_orig = pd.read_csv(os.path.join(path, file), sep=',', decimal='.')
 
@@ -166,7 +161,7 @@ dataset=dataset.join(df_orig.loc[:,['sfcprcp']], how='right')
 #------------------------------------------------------------------------------
 #------------------------------------------------------------------------------
 
-#dataset = keep_interval(0.5, 100.0, dataset, 'sfcprcp')
+dataset = keep_interval(0.1, 100.0, dataset, 'sfcprcp')
 # scale the output between 0 and 1 for the colorbar
 # y = minmax_scale(y_full)
 
@@ -178,9 +173,9 @@ dataset=dataset.join(df_orig.loc[:,['sfcprcp']], how='right')
 #plt.plot(x_array)
 #plt.show()    
 
-threshold_rain =0.1
-rain_pixels = np.where((dataset['sfcprcp'] >= threshold_rain))
-dataset=dataset.iloc[rain_pixels]        
+#threshold_rain =0.1
+#rain_pixels = np.where((dataset['sfcprcp'] >= threshold_rain))
+#dataset=dataset.iloc[rain_pixels]        
 
 #         
 # ----------------------------------------
