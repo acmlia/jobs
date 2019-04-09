@@ -12,7 +12,7 @@ import os
 from collections import Counter
 
 
-path = 'home/david/DATA/'
+path = '/home/david/DATA/'
 file = 'yrly_br_under_c1_over_c3c4.csv'
 #for file in os.listdir(path):
 print('reading file: ' + path + file)

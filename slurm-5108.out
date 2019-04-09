@@ -1,0 +1,15 @@
+Running on host node007
+Time is Qui Mar 21 00:30:30 -03 2019
+Directory is /home/david/git-repos/jobs
+Slurm job ID is 5108
+This job runs on the following machines:
+node007
+Running /home/david/vp368cpu/bin/python /home/david/git-repos/jobs/tf-regression-mpg.py
+Traceback (most recent call last):
+  File "/home/david/git-repos/jobs/tf-regression-mpg.py", line 15, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+
+real	0m0.557s
+user	0m0.070s
+sys	0m0.023s
